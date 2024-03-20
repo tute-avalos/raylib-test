@@ -4,6 +4,9 @@ project(raylib_test LANGUAGES C)
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_BUILD_TYPE "Debug")
 
+# copia el binario resultado final para encontrarlo facilmente
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+
 # Se obtiene la dependencia a través de CMake :)
 include(FetchContent)
 FetchContent_Declare(raylib
